@@ -1,0 +1,104 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Georgia', serif;
+  color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.overlay {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 60px 30px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.4em;
+}
+
+h2.low-priority {
+  font-size: 1em;
+  color: white;
+  margin-bottom: 0.5em;
+  letter-spacing: 2px;
+}
+
+p.low-priority {
+  color: white;
+  margin: 0.2em 0;
+}
+
+p.mid-priority {
+  color: #ffd700;
+  font-size: 1.1em;
+  margin: 0.3em 0;
+}
+
+.key-icon {
+  width: 60px;
+  margin: 30px auto 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.key-icon:hover {
+  transform: scale(1.2);
+}
+
+button {
+  margin-top: 1em;
+  padding: 12px 24px;
+  background: transparent;
+  border: 2px solid gold;
+  color: gold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: gold;
+  color: black;
+}
+
+.chat-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.95em;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chat-line {
+  margin-bottom: 10px;
+}
+
+.chat-line .system {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}

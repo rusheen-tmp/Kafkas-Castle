@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kafka’s Castle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay">
+    <h2 class="low-priority">Welcome to</h2>
+    <h1>Kafka’s Castle</h1>
+    <p class="low-priority">A surreal chat-based riddle experience.</p>
+    <p class="mid-priority">Escape isn’t granted—it’s uncovered.</p>
+    <p class="mid-priority">Will you find the key or be lost</p>
+    <p class="mid-priority">in the halls of logic and lies?</p>
+
+    <div class="chat-box">
+      <div class="chat-line" id="clerkLine"><span class="system">CLERK:</span> Please state your clearance code.</div>
+      <input type="text" id="userInput" placeholder="Type your reply..." onkeydown="handleKey(event)" />
+    </div>
+
+    <img src="key_icon.png" alt="Key Icon" class="key-icon" id="keyIcon" style="display:none;" onclick="enterCastle()" />
+    <button id="enterButton" onclick="enterCastle()" style="display:none;">ENTER THE CASTLE</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
